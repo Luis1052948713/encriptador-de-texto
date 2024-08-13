@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>encriptador</title>
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="/estilo.css" />
+  </head>
+  <body>
+    <header>
+      <img class="logo" src="/Logo.png" alt="" />
+    </header>
+
+    <main>
+      <seccion>
+        <textarea
+          placeholder="ingrese el texto aqui"
+          class="text-area sombra"
+          cols="30"
+          rows="10"
+        >
+        </textarea>
+        <div>
+          <h6 class="información">@solo letras minuculas y sin acento</h6>
+        </div>
+        <div class="botones">
+          <button class="btn-encriptar" onclick="btnEncriptar()">
+            encriptar
+          </button>
+          <button class="btn-desencriptar" onclick="btnDesencriptar()">
+            desencriptar
+          </button>
+        </div>
+      </seccion>
+      <seccion>
+        <textarea
+          class="mensaje"
+          cols="20"
+          rows="10"
+          placeholder="ningun mensaje fue encontrado"
+        ></textarea>
+
+        <div>
+          <button class="copiar" onclick="copyToClipboard()">copiar</button>
+        </div>
+      </seccion>
+    </main>
+    <script src="/script.js"></script>
+    <footer class="footer">@Curso de Alura Latam - Luis fernando</footer>
+  </body>
+</html>
